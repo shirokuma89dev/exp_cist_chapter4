@@ -1,5 +1,5 @@
 // 受信用 ピン番号 -> A1
-int dly = 100; // 各ビットの受信間隔 (送信側と共通)
+int dly = 100; // 各ビットの受信間隔 (送信側と共通, 100, 20, 5)
 int stat;
 int data_length = 7;
 int data[7];  // 7bit データ
