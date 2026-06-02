@@ -16,12 +16,14 @@ void setup() {
   for (int i = 0; i < base+1; i++) {
     thresholds[i] = (int)(offset + step * i);
   }*/
+
 }
 
 void loop() {
   int rawValue = analogRead(1);
   stat = rawValue < thresholds[1] ? 0 : -1; //スタートビットが0か判別できればいい
   Serial.println(stat);
+
   delay(dly);
 //  Serial.println(rawValue);
   if (stat == 0) {

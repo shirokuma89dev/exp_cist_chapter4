@@ -1,7 +1,7 @@
 int outpin = 2;   // 送信用 ピン番号
 int data_length = 7;   // 送信データ長
 byte data = B0100101;  // 送信データ (10進数の37)
-int dly = 100;    // 各ビットの送信間隔 (100, 20, 5)
+int dly = 5;    // 各ビットの送信間隔 (100, 20, 5)
 int dly2 = 500;   // データの送信間隔
 
 void setup() {
