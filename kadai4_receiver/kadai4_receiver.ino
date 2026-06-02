@@ -14,7 +14,6 @@ void loop() {
     Serial.println(stat);
     delay(dly);
     if (stat == 0) {  // スタートビットを受信した場合
-
         char msg = 0;
         for (int i = 0; i < 7; i++) {
             data[i] = digitalRead(inpin);
