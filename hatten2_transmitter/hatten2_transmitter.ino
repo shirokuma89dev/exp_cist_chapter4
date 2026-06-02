@@ -1,8 +1,8 @@
-int outpin = 3;
+int outpin = 9;
 int data_length = 7;
-int base = 4;    // n進数の定義
+int base = 3;    // n進数の定義
 // int base = 3
-int value[] = {0, 2, 1, 0, 3, 1, 2};
+int value[] = {0, 1, 0, 1, 0, 1, 2};
 // int data[] = {0, 1, 2, 1, 0, 3, 1}
 int threshold = 0;
 int dly = 100;  // 100, 20, 5
@@ -19,6 +19,8 @@ void data2Bright(int *value, int base, int *bright) {
 void setup() {
   Serial.begin(9600);
   pinMode(outpin, OUTPUT);
+
+  TCCR1B = (TCCR1B & 0B11111000) | 0x02;
 }
 
 void loop() {
