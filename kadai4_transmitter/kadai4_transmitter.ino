@@ -1,5 +1,3 @@
-#include <Arduino.h>
-
 int outpin = 8;
 int dly = 100;
 int dly2 = 500;

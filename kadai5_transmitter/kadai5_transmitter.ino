@@ -1,7 +1,4 @@
-#include <Arduino.h>
-
 int outpin = 8;
-byte data = B10;
 int dly = 100;
 int dly2 = 500;
 

@@ -1,5 +1,3 @@
-#include <Arduino.h>
-
 int inpin = 9;  // 受信用ピン番号
 int dly = 100;  // 各ビットの受信間隔（送信側と共通）
 int stat;
