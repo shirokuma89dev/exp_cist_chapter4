@@ -13,7 +13,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   stat = analogRead(1) < threshold ? 0 : 1;
-  Serial.println(stat);
   delay(dly);
 
   if (stat == 0) {  // スタートビットを受信した場合
